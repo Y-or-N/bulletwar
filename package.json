@@ -1,0 +1,28 @@
+{
+  "name": "bulletwar",
+  "version": "1.0.0",
+  "description": "hei hei",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --mode development",
+    "build": "webpack --mode production"
+  },
+  "author": "szcccc, hashqi",
+  "license": "ISC",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint-friendly-formatter": "^4.0.1"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-ivweb": "^0.1.5",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-react": "^7.19.0",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "private": true
+}
