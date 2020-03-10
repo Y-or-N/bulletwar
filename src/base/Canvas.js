@@ -39,7 +39,6 @@ class Canvas {
     this.context.fillRect(x, y, 28, -28)
     this.context.fillStyle = val[2]
     this.context.fillRect(x, y, 28, -28)
-    return this
   }
 }
 
