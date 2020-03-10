@@ -29,6 +29,8 @@ class Operator {
     // 第一位是数字 返回空
     if (isNum(message[0]) !== false) return false
     else type = message[0]
+    const messageLength = message.length
+    if (messageLength == 1) color = defaultColor
     // 第一位不是数字
     for (let i = 1; i < message.length; i++) {
       const temp = isNum(message[i])

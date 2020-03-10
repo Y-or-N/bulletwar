@@ -1,12 +1,10 @@
-import { defaultPoint } from '../common/operator'
-
 class Method {
   point_2(args, color) {
     return [[args[0], args[1], color]]
   }
 
   point_0(args, color) {
-    return [[defaultPoint[0], defaultPoint[1], color]]
+    return [[Math.floor(Math.random() * 64) + 1, Math.floor(Math.random() * 36) + 1, color]]
   }
 
   circle_3(args, color) {
@@ -30,7 +28,7 @@ class Method {
   }
 
   circle_1(args, color) {
-    args.unshift(defaultPoint[0], defaultPoint[1])
+    args.unshift(Math.floor(Math.random() * 64) + 1, Math.floor(Math.random() * 36) + 1)
     return this.circle_3(args, color)
   }
 
@@ -48,12 +46,12 @@ class Method {
   }
 
   rectangle_2(args, color) {
-    args.unshift(defaultPoint[0], defaultPoint[1])
+    args.unshift(Math.floor(Math.random() * 64) + 1, Math.floor(Math.random() * 36) + 1)
     return this.rectangle_4(args, color)
   }
 
   rectangle_1(args, color) {
-    args.unshift(defaultPoint[0], defaultPoint[1])
+    args.unshift(Math.floor(Math.random() * 64) + 1, Math.floor(Math.random() * 36) + 1)
     args[3] = args[2]
     return this.rectangle_4(args, color)
   }

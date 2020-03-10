@@ -7,12 +7,10 @@ const colorMap = {
     circle: ['circle', 'c', '画圆', '圆'],
     rectangle: ['rectangle', 'r', '画矩形', '矩形', '画块']
   },
-  defaultColor = 'black',
-  defaultPoint = [Math.floor(Math.random() * 64) + 1, Math.floor(Math.random() * 36) + 1]
+  defaultColor = 'black'
 
 export {
   colorMap,
   typeMap,
-  defaultColor,
-  defaultPoint
+  defaultColor
 }
