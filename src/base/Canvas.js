@@ -8,7 +8,7 @@ class Canvas {
     const operator = new Operator(),
       that = this
     room.$start().$subscribe(function (res) {
-      const pointsArr = operator.handle(res)
+      const pointsArr = operator.handle(res.trim())
       console.log(res, pointsArr)
       for (const i in pointsArr)
         that._setPoint(pointsArr[i])
