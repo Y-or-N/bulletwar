@@ -8,7 +8,7 @@ const colorMap = {
     rectangle: ['rectangle', 'r', '画矩形', '矩形', '画块']
   },
   defaultColor = 'black',
-  defaultPoint = [10, 10]
+  defaultPoint = [Math.floor(Math.random() * 64) + 1, Math.floor(Math.random() * 36) + 1]
 
 export {
   colorMap,
