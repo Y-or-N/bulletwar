@@ -10,6 +10,7 @@
   "author": "szcccc, hashqi",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "babel-eslint": "^10.1.0",
     "eslint-friendly-formatter": "^4.0.1",
     "yarn": "^1.22.4"
