@@ -32,10 +32,19 @@ class Method {
     return this.circle_3(args, color)
   }
 
+  /**
+   * 矩形 4参数
+   * r x y width height
+   * 高度宽度最大值为10
+   * @param {x, y, width, height} args 横坐标， 纵坐标， 宽度， 高度
+   * @param {string} color 颜色
+   */
   rectangle_4(args, color) {
-    const res = []
-    for (let i = args[0]; i < args[2] + args[0]; i++)
-      for (let j = args[1]; j < args[3] + args[1]; j++)
+    const res = [],
+      width = (args[2] > 10 ? 10 : args[2]) + args[0],
+      height = (args[3] > 10 ? 10 : args[3]) + args[1]
+    for (let i = args[0]; i < width; i++)
+      for (let j = args[1]; j < height; j++)
         res.push([i, j, color])
     return res
   }
@@ -45,6 +54,13 @@ class Method {
     return this.rectangle_4(args, color)
   }
 
+  /**
+   * 矩形 2参数
+   * r x y
+   * 随机坐标
+   * @param {width, height} args 宽度， 高度
+   * @param {string} color 颜色
+   */
   rectangle_2(args, color) {
     args.unshift(Math.floor(Math.random() * 64) + 1, Math.floor(Math.random() * 36) + 1)
     return this.rectangle_4(args, color)
